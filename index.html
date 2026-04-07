@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-btn">🌙 Mode Gelap</button>
+
+    <div class="dashboard-container">
+        <header class="card" id="greeting-section">
+            <h1 id="time-display">00:00</h1>
+            <h2 id="greeting-text">Selamat Datang!</h2>
+            <input type="text" id="user-name-input" placeholder="Masukkan namamu di sini..." class="name-input">
+            <p id="date-display">Tanggal Hari Ini</p>
+        </header>
+
+        <section class="card" id="timer-section">
+            <h3>Focus Timer</h3>
+            <div id="timer-display">25:00</div>
+            <div class="timer-controls">
+                <button id="start-btn">Start</button>
+                <button id="stop-btn">Stop</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </section>
+
+        <section class="card" id="todo-section">
+            <h3>To-Do List</h3>
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="Apa yang ingin dikerjakan?">
+                <button id="add-todo-btn">Tambah</button>
+            </div>
+            <ul id="todo-list"></ul>
+        </section>
+
+        <section class="card" id="links-section">
+            <h3>Quick Links</h3>
+            <div class="input-group">
+                <input type="text" id="link-name" placeholder="Nama Website">
+                <input type="url" id="link-url" placeholder="URL (https://...)">
+                <button id="add-link-btn">Simpan</button>
+            </div>
+            <div id="links-container"></div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
